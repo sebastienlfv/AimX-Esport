@@ -9,15 +9,15 @@
 }
 
 nav img {
-    width: 100px;
+    width: 120px;
 }
 
 nav {
     background-color: #fff;
-    /* height: 100px; */
     display: flex;
     align-items: center;
     position: relative;
+    box-shadow: 0px 10px 50px 0px black;
 }
 
 .nav-container {
@@ -38,6 +38,19 @@ nav {
     align-items: center;
     background-color: #fff;
     height: 100px;
+    position: relative;
+}
+
+.sep1 {
+    color: blue;
+    width: 100px;
+    height: 152px;
+    background-color: blue;
+    -webkit-clip-path: polygon(83% 0, 100% 0%, 19% 83%, 0 83%);
+    clip-path: polygon(83% 0, 100% 0%, 19% 83%, 0 83%);
+    position: absolute;
+    right: -140px;
+    
 }
 
 .nav-left {
@@ -59,9 +72,14 @@ nav {
     background: linear-gradient(90deg, rgba(233,0,46,1) 49%, rgba(23,0,5,1) 98%);
 }
 
+nav-link i {
+    padding-right: 15px;
+}
+
 main {
     height: 89.6vh;
     background-image: url('./images/fond-accueil.png');
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 5;
 }
