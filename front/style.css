@@ -42,15 +42,23 @@ nav {
 }
 
 .sep1 {
-    color: blue;
     width: 100px;
     height: 152px;
-    background-color: blue;
-    -webkit-clip-path: polygon(83% 0, 100% 0%, 19% 83%, 0 83%);
-    clip-path: polygon(83% 0, 100% 0%, 19% 83%, 0 83%);
+    background-color: #000;
+    -webkit-clip-path: polygon(55% 0, 100% 0%, 45% 83%, 0 83%);
+    clip-path: polygon(55% 0, 100% 0%, 45% 83%, 0 83%);
     position: absolute;
-    right: -140px;
-    
+    right: -187px; 
+}
+
+.sep2 {
+    width: 100px;
+    height: 152px;
+    background-color: #000;
+    -webkit-clip-path: polygon(55% 0, 10% 0, 55% 83%, 100% 83%);
+    clip-path: polygon(55% 0, 10% 0, 55% 83%, 100% 83%);
+    position: absolute;
+    left: -187px; 
 }
 
 .nav-left {
