@@ -38,15 +38,16 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    height: 100px;
+    height: 80px;
+    width: 120px;
     position: relative;
 
     .sep1 {
       width: 100px;
       height: 152px;
       background-color: #000;
-      -webkit-clip-path: polygon(55% 0, 100% 0%, 45% 83%, 0 83%);
-      clip-path: polygon(55% 0, 100% 0%, 45% 83%, 0 83%);
+      -webkit-clip-path: polygon(55% 0, 100% 0%, 45% 77%, 0 77%);
+      clip-path: polygon(55% 0, 100% 0%, 45% 77%, 0 77%);
       position: absolute;
       right: -187px;
     }
@@ -55,8 +56,8 @@ nav {
       width: 100px;
       height: 152px;
       background-color: #000;
-      -webkit-clip-path: polygon(55% 0, 10% 0, 55% 83%, 100% 83%);
-      clip-path: polygon(55% 0, 10% 0, 55% 83%, 100% 83%);
+      -webkit-clip-path: polygon(55% 0, 10% 0, 55% 77%, 100% 77%);
+      clip-path: polygon(55% 0, 10% 0, 55% 77%, 100% 77%);
       position: absolute;
       left: -187px;
     }
@@ -67,7 +68,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     width: 40%;
-    height: 100px;
+    height: 80px;
     background: linear-gradient(270deg, rgba(233,0,46,1) 33%, rgba(0,0,0,1) 91%);
   }
 
@@ -76,7 +77,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     width: 40%;
-    height: 100px;
+    height: 80px;
     background-color: blue;
     background: linear-gradient(90deg, rgba(233,0,46,1) 33%, rgba(23,0,5,1) 91%);
   }
@@ -91,7 +92,7 @@ nav {
 }
 
 main {
-  height: 90vh;
+  height: 91.5vh;
   background-image: url('./images/fond-accueil.png');
   background-size: cover;
   background-repeat: no-repeat;
