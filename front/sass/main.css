@@ -5,19 +5,7 @@
   }
   100% {
     width: 380px;
-    height: 335px;
-  }
-}
-@keyframes home-animation-2 {
-  0% {
-    display: none;
-    width: 0px;
-    height: 0px;
-  }
-  100% {
-    display: flex;
-    width: 380px;
-    height: 335px;
+    height: 347px;
   }
 }
 * {
@@ -25,9 +13,22 @@
   padding: 0;
 }
 
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 @font-face {
   font-family: "Valorant";
   src: url("font/Valorant.ttf");
+}
+@font-face {
+  font-family: "GothamLight";
+  src: url("./font/GothamLight.ttf");
+}
+@font-face {
+  font-family: "GothamBook";
+  src: url("./font/GothamBook.ttf");
 }
 nav {
   background-color: #fff;
@@ -101,18 +102,15 @@ nav nav-link i {
   padding-right: 15px;
 }
 
-main {
-  height: 91.5vh;
+main #home-container {
   background-image: url("./images/fond-accueil.png");
   background-size: cover;
+  background-position-y: -210px;
   background-repeat: no-repeat;
-  z-index: 5;
-}
-main #home-container {
   display: flex;
   justify-content: right;
   align-items: center;
-  height: 90vh;
+  height: 91.5vh;
   position: relative;
   overflow: hidden;
 }
@@ -125,7 +123,7 @@ main #home-container .sep-anim1 {
   position: absolute;
   top: 0px;
   width: 380px;
-  height: 335px;
+  height: 347px;
   background-color: #000;
   -webkit-clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
   clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
@@ -134,11 +132,10 @@ main #home-container .sep-anim1 {
 }
 main #home-container .sep-anim2 {
   position: absolute;
-  overflow: hidden;
   top: 0px;
   right: -200px;
   width: 380px;
-  height: 335px;
+  height: 347px;
   background-color: rgb(233, 0, 46);
   -webkit-clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
   clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
@@ -147,11 +144,10 @@ main #home-container .sep-anim2 {
 }
 main #home-container .sep-anim3 {
   position: absolute;
-  overflow: hidden;
   top: 510px;
   right: 200px;
   width: 380px;
-  height: 335px;
+  height: 347px;
   background-color: rgb(233, 0, 46);
   -webkit-clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
   clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
@@ -164,12 +160,127 @@ main #home-container .sep-anim4 {
   top: 510px;
   right: 380px;
   width: 380px;
-  height: 335px;
+  height: 347px;
   background-color: #000;
   -webkit-clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
   clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
   animation-name: home-animation;
   animation-duration: 1s;
+}
+main #presentation-container {
+  height: 100vh;
+  background-color: #fff;
+  background-image: url("./images/fond-pres.png");
+  position: relative;
+  overflow: hidden;
+}
+main #presentation-container img {
+  height: 100%;
+  width: 1100px;
+}
+main #presentation-container h1 {
+  color: #000;
+  font-family: "Valorant";
+  font-size: 48px;
+  width: 55%;
+  padding-top: 200px;
+  text-align: right;
+}
+main #presentation-container .p-container {
+  margin-top: 175px;
+  display: flex;
+  overflow: hidden;
+}
+main #presentation-container .p-container .test-container {
+  width: 55%;
+  height: 150px;
+}
+main #presentation-container .p-container .text-pres {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+main #presentation-container .p-container .text-pres span {
+  color: rgb(233, 0, 46);
+}
+main #presentation-container .p-container .text-pres span:nth-child(2) {
+  text-decoration: underline;
+  cursor: pointer;
+}
+main #presentation-container .p-container .text-pres span:nth-child(2) a {
+  text-decoration: none;
+  color: rgb(233, 0, 46);
+}
+main #presentation-container .p-container .text-pres p {
+  font-family: "GothamLight";
+  font-size: 18px;
+  line-height: 1.5em;
+}
+main #presentation-container .p-container .text-pres p:nth-child(1) {
+  margin-bottom: 40px;
+}
+main #tweet-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+main #tweet-container .blackbar {
+  position: absolute;
+  width: 373px;
+  height: 100%;
+  background-color: #000;
+  z-index: 0;
+  left: 630px;
+  border-left: 2px solid rgb(233, 0, 46);
+}
+main #tweet-container .flex-tweet {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+main #tweet-container .flex-tweet .info-tweet {
+  display: flex;
+  flex-direction: column;
+}
+main #tweet-container .flex-tweet .info-tweet h1 {
+  font-size: 48px;
+  font-family: "Valorant";
+}
+main #tweet-container .flex-tweet .info-tweet div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+main #tweet-container .flex-tweet .info-tweet div img {
+  width: 150px;
+  margin-bottom: 40px;
+}
+main #tweet-container .flex-tweet .info-tweet div span {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-family: "GothamBook";
+}
+main #tweet-container .flex-tweet .info-tweet div i {
+  font-size: 40px;
+  border: 1px solid rgb(233, 0, 46);
+  border-radius: 50%;
+  color: rgb(233, 0, 46);
+  padding: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+main #tweet-container .flex-tweet .info-tweet div i:hover {
+  color: #fff;
+  background-color: rgb(233, 0, 46);
+  transition: 0.5s;
+}
+main #tweet-container .flex-tweet .tweetfeel {
+  width: 900px;
+  height: 600px;
 }
 
 /*# sourceMappingURL=main.css.map */

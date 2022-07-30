@@ -5,9 +5,24 @@
   padding: 0;
 }
 
+li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
 @font-face {
   font-family: 'Valorant';
   src: url('font/Valorant.ttf');
+}
+
+@font-face {
+  font-family: 'GothamLight';
+  src: url('./font/GothamLight.ttf');
+}
+
+@font-face {
+  font-family: 'GothamBook';
+  src: url('./font/GothamBook.ttf');
 }
 
 nav {
@@ -92,17 +107,15 @@ nav {
 }
 
 main {
-  height: 91.5vh;
-  background-image: url('./images/fond-accueil.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 5;
-
   #home-container {
+    background-image: url('./images/fond-accueil.png');
+    background-size: cover;
+    background-position-y: -210px;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: right;
     align-items: center;
-    height: 90vh;
+    height: 91.5vh;
     position: relative;
     overflow: hidden;
 
@@ -116,7 +129,7 @@ main {
       position: absolute;
       top: 0px;
       width: 380px;
-      height: 335px;
+      height: 347px;
       background-color: #000;
       -webkit-clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
       clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
@@ -126,11 +139,10 @@ main {
 
     .sep-anim2 {
       position: absolute;
-      overflow: hidden;
       top: 0px;
       right: -200px;
       width: 380px;
-      height: 335px;
+      height: 347px;
       background-color: rgba(233,0,46,1);
       -webkit-clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
       clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
@@ -140,11 +152,10 @@ main {
 
     .sep-anim3 {
       position: absolute;
-      overflow: hidden;
       top: 510px;
       right: 200px;
       width: 380px;
-      height: 335px;
+      height: 347px;
       background-color: rgba(233,0,46,1);
       -webkit-clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
       clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
@@ -158,12 +169,150 @@ main {
       top: 510px;
       right: 380px;
       width: 380px;
-      height: 335px;
+      height: 347px;
       background-color: #000;
       -webkit-clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
       clip-path: polygon(96% 0, 97% 0, 29% 100%, 28% 100%);
       animation-name: home-animation;
       animation-duration: 1s;
+    }
+  }
+
+  #presentation-container {
+    height: 100vh;
+    background-color: #fff;
+    background-image: url("./images/fond-pres.png");
+    position: relative;
+    overflow: hidden;
+
+
+    img {
+      height: 100%;
+      width: 1100px;
+    }
+
+    h1 {
+      color: #000;
+      font-family: 'Valorant';
+      font-size: 48px;
+      width: 55%;
+      padding-top: 200px;
+      text-align: right;
+    }
+
+    .p-container {
+      margin-top: 175px;
+      display: flex;
+      overflow: hidden;
+
+      .test-container {
+        width: 55%;
+        height: 150px;
+      }
+
+      .text-pres {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+
+        span {
+          color: rgba(233,0,46,1);
+        }
+
+        span:nth-child(2) {
+          text-decoration: underline;
+          cursor: pointer;
+
+          a {
+            text-decoration: none;
+            color: rgba(233,0,46,1);
+          }
+        }
+
+        p {
+          font-family: 'GothamLight';
+          font-size: 18px;
+          line-height: 1.5em;
+        }
+
+        p:nth-child(1) {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+
+  #tweet-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .blackbar {
+      position: absolute;
+      width: 373px;
+      height: 100%;
+      background-color: #000;
+      z-index: 0;
+      left: 630px;
+      border-left: 2px solid rgba(233,0,46,1);
+    }
+
+    .flex-tweet {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      z-index: 1;
+
+      .info-tweet {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          font-size: 48px;
+          font-family: 'Valorant';
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 200px;
+
+          img {
+            width: 150px;
+            margin-bottom: 40px;
+          }
+
+          span {
+            font-size: 24px;
+            margin-bottom: 30px;
+            font-family: 'GothamBook';
+          }
+
+          i {
+            font-size: 40px;
+            border: 1px solid rgba(233,0,46,1);
+            border-radius: 50%;
+            color: rgba(233,0,46,1);
+            padding: 10px;
+            transition: 0.5s;
+            cursor: pointer;
+          }
+
+          i:hover {
+            color: #fff;
+            background-color: rgba(233,0,46,1);
+            transition: 0.5s;
+          }
+        }
+      }
+
+      .tweetfeel {
+        width: 900px;
+        height: 600px;
+      }
     }
   }
 }
