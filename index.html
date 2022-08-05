@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +8,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./images/Logo-original.png">
     <script src="https://kit.fontawesome.com/a143a2c033.js" crossorigin="anonymous"></script>
     <script src="./main.js" defer></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" defer></script>
     <title>AimX Esport</title>
 </head>
 <body>
     <nav>
         <div class="nav-container">
             <div class="nav-left">
-                <nav-link class="home-link"><i class="fa-solid fa-house"></i>ACCUEIL</nav-link>
+                <a href="#"><nav-link class="home-link"><i class="fa-solid fa-house"></i>ACCUEIL</nav-link></a>
                 <nav-link><i class="fa-solid fa-user-group"></i>NOS EQUIPES</nav-link>
             </div>
             <div class="nav-center">
@@ -39,7 +40,7 @@
         <section id="presentation-container">
             <h1>PRESENTATION</h1>
             <div class="p-container">
-                <div class="test-container"></div>
+                <div class="margin-container"></div>
                 <div class="text-pres">
                     <p>
                         AimX Esport est une structure esport sous loi 1901 fondée en <span>2020.</span>
@@ -66,10 +67,39 @@
                 </div>
                 <div class="tweetfeel">
                     <a class="twitter-timeline" data-width="900" data-height="600" data-theme="dark" href="https://twitter.com/AimxEsport?ref_src=twsrc%5Etfw">Tweets by AimxEsport</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </section>
+        <section id="recrut-container">
+            <h1>RECRUTEMENT</h1>
+            <span class="blackbar-2"></span>
+            <div class="formulaire">
+                <div class="margin2-container"></div>
+                <div class="recrut-info">
+                    <span class="firstname">Nom</span>
+                    <span class="lastname">Adresse Mail</span>
+                    <span class="object">Objet</span>
+                    <span class="message">Message</span>
+                    <button class="submit">ENVOYER</button>
                 </div>
             </div>
         </section>
     </main>
+    <footer id="footer-home">
+        <div class="footer-logo">
+            <img src="./images/Logo-black.png">
+        </div>
+        <div class="footer-reseaux">
+            <h1>SUIVEZ-NOUS</h1>
+            <div class="reseaux">
+                <i class="fab fa-twitter"></i>
+                <i class="fa-brands fa-twitch"></i>
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
