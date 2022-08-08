@@ -112,13 +112,20 @@
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
+  text-align: center;
 }
 #r6-container .r6team-container .left-container .players-info .upline div i {
   color: #fff;
   font-size: 36px;
   position: absolute;
-  bottom: -10px;
+  bottom: 30px;
   right: 90px;
+  cursor: pointer;
+}
+#r6-container .r6team-container .left-container .players-info .upline div p {
+  color: #fff;
+  font-family: "GothamLight";
+  padding-top: 20px;
   cursor: pointer;
 }
 #r6-container .r6team-container .left-container .players-info .bottomline {
@@ -130,13 +137,20 @@
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
+  text-align: center;
 }
 #r6-container .r6team-container .left-container .players-info .bottomline div i {
   color: #fff;
   font-size: 36px;
   position: absolute;
-  bottom: -10px;
+  bottom: 30px;
   right: 90px;
+  cursor: pointer;
+}
+#r6-container .r6team-container .left-container .players-info .bottomline div p {
+  color: #fff;
+  font-family: "GothamLight";
+  padding-top: 20px;
   cursor: pointer;
 }
 #r6-container .r6team-container .right-container {
@@ -157,16 +171,24 @@
 }
 #r6-container .r6team-container .right-container .info-analyste {
   position: relative;
+  text-align: center;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 80px;
 }
 #r6-container .r6team-container .right-container .info-analyste i {
   color: #fff;
   font-size: 36px;
   position: absolute;
-  top: 245px;
+  top: 220px;
   right: 50px;
+  cursor: pointer;
+}
+#r6-container .r6team-container .right-container .info-analyste p {
+  color: #fff;
+  font-family: "GothamLight";
+  padding-top: 30px;
   cursor: pointer;
 }
 
@@ -251,13 +273,20 @@
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
+  text-align: center;
 }
 #r6aca-container .r6acateam-container .left-container .players-info .line i {
   color: #E9002E;
   position: absolute;
   top: 110px;
-  right: 90px;
+  right: 88px;
   font-size: 36px;
+  cursor: pointer;
+}
+#r6aca-container .r6acateam-container .left-container .players-info .line p {
+  color: #000;
+  font-family: "GothamLight";
+  padding-top: 20px;
   cursor: pointer;
 }
 #r6aca-container .r6acateam-container .right-container {
@@ -279,15 +308,22 @@
 #r6aca-container .r6acateam-container .right-container .info-analyste {
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 80px;
 }
 #r6aca-container .r6acateam-container .right-container .info-analyste i {
   color: #E9002E;
   font-size: 36px;
   position: absolute;
-  top: 240px;
-  right: 50px;
+  top: 227px;
+  right: 68px;
+  cursor: pointer;
+}
+#r6aca-container .r6acateam-container .right-container .info-analyste p {
+  color: #000;
+  font-family: "GothamLight";
+  padding-top: 20px;
   cursor: pointer;
 }
 
@@ -316,7 +352,7 @@
   margin-top: 5px;
 }
 #valorant-container .info-title img {
-  width: 200px;
+  width: 150px;
 }
 #valorant-container .info-roster {
   width: 700px;
@@ -358,13 +394,20 @@
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
+  text-align: center;
 }
 #valorant-container .players-info .upline div i {
   color: #000;
   font-size: 36px;
   position: absolute;
-  bottom: -10px;
+  bottom: 25px;
   right: 90px;
+  cursor: pointer;
+}
+#valorant-container .players-info .upline div p {
+  color: #fff;
+  font-family: "GothamLight";
+  padding-top: 20px;
   cursor: pointer;
 }
 #valorant-container .players-info .bottomline {
@@ -381,8 +424,14 @@
   color: #000;
   font-size: 36px;
   position: absolute;
-  bottom: -10px;
+  bottom: 25px;
   right: 90px;
+  cursor: pointer;
+}
+#valorant-container .players-info .bottomline div p {
+  color: #fff;
+  font-family: "GothamLight";
+  padding-top: 20px;
   cursor: pointer;
 }
 
@@ -428,6 +477,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 li {

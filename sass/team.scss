@@ -114,13 +114,21 @@
             padding-left: 40px;
             padding-right: 40px;
             position: relative;
+            text-align: center;
 
             i {
               color: #fff;
               font-size: 36px;
               position: absolute;
-              bottom: -10px;
+              bottom: 30px;
               right: 90px;
+              cursor: pointer;
+            }
+
+            p {
+              color: #fff;
+              font-family: 'GothamLight';
+              padding-top: 20px;
               cursor: pointer;
             }
           }
@@ -135,13 +143,21 @@
             padding-left: 40px;
             padding-right: 40px;
             position: relative;
+            text-align: center;
 
             i {
               color: #fff;
               font-size: 36px;
               position: absolute;
-              bottom: -10px;
+              bottom: 30px;
               right: 90px;
+              cursor: pointer;
+            }
+
+            p {
+              color: #fff;
+              font-family: 'GothamLight';
+              padding-top: 20px;
               cursor: pointer;
             }
           }
@@ -169,16 +185,25 @@
 
       .info-analyste {
         position: relative;
+        text-align: center;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
         margin-left: 80px;
 
         i {
           color: #fff;
           font-size: 36px;
           position: absolute;
-          top: 245px;
+          top: 220px;
           right: 50px;
+          cursor: pointer;
+        }
+
+        p {
+          color: #fff;
+          font-family: 'GothamLight';
+          padding-top: 30px;
           cursor: pointer;
         }
       }
@@ -277,14 +302,22 @@
             padding-left: 40px;
             padding-right: 40px;
             position: relative;
+            text-align: center;
           }
 
           i {
             color: #E9002E;
             position: absolute;
             top: 110px;
-            right: 90px;
+            right: 88px;
             font-size: 36px;
+            cursor: pointer;
+          }
+
+          p {
+            color: #000;
+            font-family: 'GothamLight';
+            padding-top: 20px;
             cursor: pointer;
           }
         }
@@ -312,15 +345,23 @@
       .info-analyste {
         position: relative;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
         margin-left: 80px;
 
         i {
           color: #E9002E;
           font-size: 36px;
           position: absolute;
-          top: 240px;
-          right: 50px;
+          top: 227px;
+          right: 68px;
+          cursor: pointer;
+        }
+
+        p {
+          color: #000;
+          font-family: 'GothamLight';
+          padding-top: 20px;
           cursor: pointer;
         }
       }
@@ -355,7 +396,7 @@
     }
 
     img {
-      width: 200px;
+      width: 150px;
     }
   }
 
@@ -404,13 +445,21 @@
         padding-left: 40px;
         padding-right: 40px;
         position: relative;
+        text-align: center;
 
         i {
           color: #000;
           font-size: 36px;
           position: absolute;
-          bottom: -10px;
+          bottom: 25px;
           right: 90px;
+          cursor: pointer;
+        }
+
+        p {
+          color: #fff;
+          font-family: 'GothamLight';
+          padding-top: 20px;
           cursor: pointer;
         }
       }
@@ -430,8 +479,15 @@
           color: #000;
           font-size: 36px;
           position: absolute;
-          bottom: -10px;
+          bottom: 25px;
           right: 90px;
+          cursor: pointer;
+        }
+
+        p {
+          color: #fff;
+          font-family: 'GothamLight';
+          padding-top: 20px;
           cursor: pointer;
         }
       }
