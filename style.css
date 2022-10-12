@@ -759,7 +759,6 @@ main #tweet-container .flex-tweet .tweetfeel {
   margin-top: 125px;
 }
 main #recrut-container {
-  height: 100vh;
   position: relative;
 }
 main #recrut-container h1 {
@@ -839,6 +838,7 @@ main #recrut-container .formulaire .recrut-info .submit {
   padding: 10px;
   cursor: pointer;
   transition: 0.3s;
+  margin-bottom: 100px;
 }
 main #recrut-container .formulaire .recrut-info .submit:hover {
   background-color: #E9002E;

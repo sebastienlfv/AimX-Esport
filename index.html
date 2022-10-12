@@ -73,28 +73,32 @@
         <section id="recrut-container">
             <h1>RECRUTEMENT</h1>
             <span class="blackbar-2"></span>
-            <div class="formulaire">
+            <form class="formulaire"
+            action="https://formsubmit.co/sebastienlfv.pro@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+            name="emailForm">
                 <div class="margin2-container"></div>
                 <div class="recrut-info">
                     <div class="firstname">
                         <span>Nom</span>
-                        <input type="text">
+                        <input name="nom" type="text">
                     </div>
                     <div class="email">
                         <span>Adresse Mail</span>
-                        <input type="text">
+                        <input name="email" type="text">
                     </div>
                     <div class="object">
                         <span>Objet</span>
-                        <input type="text" name="" id="">
+                        <input type="text" name="object">
                     </div>
                     <div class="message">
                         <span>Message</span>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <textarea name="message" cols="30" rows="10"></textarea>
                     </div>
                     <button type="submit" class="submit">ENVOYER</button>
                 </div>
-            </div>
+            </form>
         </section>
     </main>
     <footer id="footer-home">
