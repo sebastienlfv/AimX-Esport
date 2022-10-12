@@ -512,6 +512,9 @@ nav {
 nav img {
   width: 120px;
 }
+nav .team-menu {
+  display: none;
+}
 nav .nav-container {
   display: flex;
   align-items: center;
@@ -790,20 +793,41 @@ main #recrut-container .formulaire .recrut-info {
   font-size: 25px;
 }
 main #recrut-container .formulaire .recrut-info span {
-  margin-bottom: 100px;
   font-family: "GothamLight";
+}
+main #recrut-container .formulaire .recrut-info div {
+  display: flex;
+  flex-direction: column;
+}
+main #recrut-container .formulaire .recrut-info div input {
+  width: 150px;
+  height: 30px;
+  font-size: 18px;
 }
 main #recrut-container .formulaire .recrut-info .firstname {
   margin-left: 400px;
+  margin-bottom: 100px;
 }
-main #recrut-container .formulaire .recrut-info .lastname {
+main #recrut-container .formulaire .recrut-info .email {
   margin-left: 300px;
+  margin-bottom: 100px;
+}
+main #recrut-container .formulaire .recrut-info .email input {
+  width: 220px;
 }
 main #recrut-container .formulaire .recrut-info .object {
   margin-left: 200px;
+  margin-bottom: 100px;
+}
+main #recrut-container .formulaire .recrut-info .object input {
+  width: 220px;
 }
 main #recrut-container .formulaire .recrut-info .message {
   margin-left: 100px;
+  margin-bottom: 100px;
+}
+main #recrut-container .formulaire .recrut-info .message textarea {
+  resize: none;
 }
 main #recrut-container .formulaire .recrut-info .submit {
   width: 150px;

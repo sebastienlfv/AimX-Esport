@@ -366,24 +366,50 @@ main {
         font-size: 25px;
 
         span {
-          margin-bottom: 100px;
           font-family: 'GothamLight';
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+
+          input {
+            width: 150px;
+            height: 30px;
+            font-size: 18px;
+          }
         }
 
         .firstname {
           margin-left: 400px;
+          margin-bottom: 100px;
         }
 
-        .lastname {
+        .email {
           margin-left: 300px;
+          margin-bottom: 100px;
+
+          input {
+            width: 220px;
+          }
         }
 
         .object {
           margin-left: 200px;
+          margin-bottom: 100px;
+
+          input {
+            width: 220px;
+          }
         }
 
         .message {
           margin-left: 100px;
+          margin-bottom: 100px;
+
+          textarea {
+            resize: none;
+          }
         }
 
         .submit {
