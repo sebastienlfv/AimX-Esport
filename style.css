@@ -605,7 +605,7 @@ main #home-container #aimx-title {
 main #home-container .sep-anim1 {
   position: absolute;
   top: 0px;
-  right: 60px;
+  right: 90px;
   width: 380px;
   height: 350px;
   background-color: #000;
@@ -617,7 +617,7 @@ main #home-container .sep-anim1 {
 main #home-container .sep-anim2 {
   position: absolute;
   top: 0px;
-  right: -160px;
+  right: -130px;
   width: 380px;
   height: 350px;
   background-color: rgb(233, 0, 46);
@@ -629,7 +629,7 @@ main #home-container .sep-anim2 {
 main #home-container .sep-anim3 {
   position: absolute;
   top: 510px;
-  right: 210px;
+  right: 245px;
   width: 380px;
   height: 380px;
   background-color: rgb(233, 0, 46);
@@ -642,7 +642,7 @@ main #home-container .sep-anim4 {
   position: absolute;
   overflow: hidden;
   top: 510px;
-  right: 430px;
+  right: 460px;
   width: 380px;
   height: 380px;
   background-color: #000;
