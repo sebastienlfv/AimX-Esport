@@ -582,6 +582,9 @@
   main #presentation-container .p-container .margin-container {
     display: none;
   }
+  main #tweet-container {
+    height: 100% !important;
+  }
   main #tweet-container .blackbar {
     display: none;
   }
@@ -604,11 +607,10 @@
     margin-top: 0px !important;
   }
   main #tweet-container .flex-tweet .tweetfeel {
-    height: 400px !important;
     width: 90% !important;
   }
   main #recrut-container {
-    padding-top: 200px;
+    padding-top: 100px;
   }
   main #recrut-container h1 {
     width: 100% !important;

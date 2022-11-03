@@ -113,6 +113,7 @@
     }
 
     #tweet-container {
+      height: 100% !important;
 
       .blackbar {
         display: none;
@@ -142,14 +143,13 @@
         }
 
         .tweetfeel {
-          height: 400px !important;
           width: 90% !important;
         }
       }
     }
 
     #recrut-container {
-      padding-top: 200px;
+      padding-top: 100px;
 
       h1 {
         width: 100% !important;
