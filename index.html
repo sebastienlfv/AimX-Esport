@@ -12,7 +12,30 @@
     <title>AimX Esport</title>
 </head>
 <body>
-    <nav>
+    <nav class="nav-mobile">
+        <img src="./images/Logo-original.png">
+        <i class="fa-solid fa-bars burger-button"></i>
+        <div class="burger-menu">
+            <a class="menu">
+                <i class="fa-solid fa-house"></i>
+                <p>ACCUEIL</p>
+            </a>
+            <a class="menu">
+                <i class="fa-solid fa-user-group"></i>
+                <p>EQUIPES</p>
+            </a>
+            <a class="menu">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>SHOP</p>
+            </a>
+            <a class="menu">
+                <i class="fa-solid fa-tv"></i>
+                <p>LIVE</p>
+            </a>
+            <div class="red-bar-burger"></div>
+        </div>
+    </nav>
+    <nav class="nav-desktop">
         <div class="nav-container">
             <div class="nav-left">
                 <a href="./index.html"><nav-link class="home-link"><i class="fa-solid fa-house"></i>ACCUEIL</nav-link></a>
@@ -103,8 +126,9 @@
     </main>
     <footer id="footer-home">
         <div class="footer-logo">
-            <img src="./images/Logo-black.png">
+            <img src="./images/Logo-black.png" class="logo-desktop">
         </div>
+        <img src="./images/Logo-white.png" class="logo-mobile">
         <div class="footer-reseaux">
             <h1>SUIVEZ-NOUS</h1>
             <div class="reseaux">

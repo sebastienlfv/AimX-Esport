@@ -1,19 +1,10 @@
-const teamLink = document.querySelector('.team-link')
+const burgerButton = document.querySelector('.burger-button')
+const burgerMenu = document.querySelector('.burger-menu')
 
-teamLink.addEventListener('mouseover', () => {
-  const teamMenu = document.querySelector('.team-menu')
-  teamLink.style.position = 'relative'
-  teamMenu.style.width = '210px'
-  teamMenu.style.height = '100px'
-  teamMenu.style.backgroundColor = 'white'
-  teamMenu.style.position = 'absolute'
-  teamMenu.style.top = '35px'
-  teamMenu.style.zIndex = '99'
-  teamMenu.style.display = 'flex'
-  teamLink.appendChild(teamMenu)
-})
-
-teamLink.addEventListener('mouseout', () => {
-  const teamMenu = document.querySelector('.team-menu')
-  teamMenu.style.display = 'none'
+burgerButton.addEventListener('click', () => {
+  if(burgerMenu.style.display == 'none') {
+    burgerMenu.style.display = 'block'
+  } else {
+    burgerMenu.style.display = 'none'
+  }
 })

@@ -1,0 +1,230 @@
+@media (max-width: 900px) {
+  .nav-desktop {
+    display: none !important;
+  }
+
+  .nav-mobile {
+    display: flex !important;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 20px;
+
+    img {
+      width: 60px;
+    }
+
+    i {
+      font-size: 20px;
+    }
+
+    .burger-menu {
+      position: absolute;
+      background-color: #fff;
+      height: 230px;
+      width: 100%;
+      top: 60px;
+      left: 0px;
+      z-index: 99;
+      display: none;
+
+      .menu {
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+        font-family: 'Valorant';
+        border-bottom: 1px solid rgb(197, 197, 197);
+        color: #000;
+
+        p {
+          margin-left: 10px;
+        }
+        i {
+          width: 25px;
+        }
+
+        &:nth-child(4) {
+          border: none;
+        }
+      }
+
+      .red-bar-burger {
+        width: 100px;
+        height: 5px;
+        background-color: red;
+        margin: auto;
+        border-radius: 50px;
+        margin-top: 0px;
+      }
+    }
+  }
+
+  main {
+    #home-container {
+      background: url('./images/mobile/fond-home-mobile.png') !important;
+      background-size: cover !important;
+      background-position: top -31px right 0px !important;
+      height: 93vh !important;
+
+      #aimx-title {
+        display: flex;
+        text-align: center;
+        margin-right: 0px !important;
+        font-size: 60px !important;
+      }
+
+      .sep-anim1 {
+        display: none;
+      }
+  
+      .sep-anim2 {
+        display: none;
+      }
+  
+      .sep-anim3 {
+        display: none;
+      }
+  
+      .sep-anim4 {
+        display: none;
+      }
+    }
+
+    #presentation-container {
+      background: none !important;
+      height: 60vh !important;
+
+      h1 {
+        text-align: center !important;
+        width: 100% !important;
+        font-size: 40px !important;
+        padding-top: 50px !important;
+      }
+
+      .p-container {
+        margin-top: 50px !important;
+        padding: 20px;
+
+        .margin-container {
+          display: none;
+        }
+      }
+    }
+
+    #tweet-container {
+
+      .blackbar {
+        display: none;
+      }
+
+      .flex-tweet {
+        flex-direction: column;
+
+        .info-tweet {
+          h1 {
+            font-size: 35px !important;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+          }
+
+          a {
+            margin-bottom: 25px;
+          }
+        }
+
+        div {
+          margin-top: 0px !important;
+        }
+
+        .tweetfeel {
+          height: 400px !important;
+          width: 340px !important;
+        }
+      }
+    }
+
+    #recrut-container {
+      padding-top: 200px;
+
+      h1 {
+        width: 100% !important;
+        font-size: 35px !important;
+        margin-bottom: 50px;
+      }
+
+      .blackbar-2 {
+        display: none;
+      }
+
+      .margin2-container {
+        display: none;
+      }
+
+      .recrut-info {
+        width: 100%;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: center;
+        .firstname {
+          margin-left: 0px !important;
+          margin-bottom: 50px !important;
+        }
+  
+        .email {
+          margin-left: 0px !important;
+          margin-bottom: 50px !important;
+        }
+  
+        .object {
+          margin-left: 0px !important;
+          margin-bottom: 50px !important;
+        }
+  
+        .message {
+          margin-left: 0px !important;
+          margin-bottom: 50px !important;
+        }
+
+        .submit {
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  #footer-home {
+    height: 160px !important;
+    flex-direction: column;
+
+    .logo-desktop {
+      display: none;
+    }
+
+    .logo-mobile {
+      display: flex;
+      width: 100px;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .footer-reseaux {
+      margin-left: 0px !important;
+      margin-bottom: 0px !important;
+      h1 {
+        display: none;
+      }
+
+      .reseaux {
+        display: flex;
+        justify-content: space-around;
+
+        i {
+          padding-right: 0px !important;
+        }
+      }
+    }
+  }
+}

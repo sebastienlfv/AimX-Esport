@@ -1,5 +1,6 @@
 @import "animation";
 @import "team";
+@import './Utils/mobile.scss';
 
 * {
   margin: 0;
@@ -32,7 +33,15 @@ a {
   src: url('./font/GothamBook.ttf');
 }
 
-nav {
+.nav-mobile {
+  display: none;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.nav-desktop {
   background-color: #fff;
   display: flex;
   align-items: center;

@@ -484,6 +484,190 @@
   transition: 0.3s;
 }
 
+@media (max-width: 900px) {
+  .nav-desktop {
+    display: none !important;
+  }
+  .nav-mobile {
+    display: flex !important;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 20px;
+  }
+  .nav-mobile img {
+    width: 60px;
+  }
+  .nav-mobile i {
+    font-size: 20px;
+  }
+  .nav-mobile .burger-menu {
+    position: absolute;
+    background-color: #fff;
+    height: 230px;
+    width: 100%;
+    top: 60px;
+    left: 0px;
+    z-index: 99;
+    display: none;
+  }
+  .nav-mobile .burger-menu .menu {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-family: "Valorant";
+    border-bottom: 1px solid rgb(197, 197, 197);
+    color: #000;
+  }
+  .nav-mobile .burger-menu .menu p {
+    margin-left: 10px;
+  }
+  .nav-mobile .burger-menu .menu i {
+    width: 25px;
+  }
+  .nav-mobile .burger-menu .menu:nth-child(4) {
+    border: none;
+  }
+  .nav-mobile .burger-menu .red-bar-burger {
+    width: 100px;
+    height: 5px;
+    background-color: red;
+    margin: auto;
+    border-radius: 50px;
+    margin-top: 0px;
+  }
+  main #home-container {
+    background: url("./images/mobile/fond-home-mobile.png") !important;
+    background-size: cover !important;
+    background-position: top -31px right 0px !important;
+    height: 93vh !important;
+  }
+  main #home-container #aimx-title {
+    display: flex;
+    text-align: center;
+    margin-right: 0px !important;
+    font-size: 60px !important;
+  }
+  main #home-container .sep-anim1 {
+    display: none;
+  }
+  main #home-container .sep-anim2 {
+    display: none;
+  }
+  main #home-container .sep-anim3 {
+    display: none;
+  }
+  main #home-container .sep-anim4 {
+    display: none;
+  }
+  main #presentation-container {
+    background: none !important;
+    height: 60vh !important;
+  }
+  main #presentation-container h1 {
+    text-align: center !important;
+    width: 100% !important;
+    font-size: 40px !important;
+    padding-top: 50px !important;
+  }
+  main #presentation-container .p-container {
+    margin-top: 50px !important;
+    padding: 20px;
+  }
+  main #presentation-container .p-container .margin-container {
+    display: none;
+  }
+  main #tweet-container .blackbar {
+    display: none;
+  }
+  main #tweet-container .flex-tweet {
+    flex-direction: column;
+  }
+  main #tweet-container .flex-tweet .info-tweet h1 {
+    font-size: 35px !important;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  main #tweet-container .flex-tweet .info-tweet a {
+    margin-bottom: 25px;
+  }
+  main #tweet-container .flex-tweet div {
+    margin-top: 0px !important;
+  }
+  main #tweet-container .flex-tweet .tweetfeel {
+    height: 400px !important;
+    width: 340px !important;
+  }
+  main #recrut-container {
+    padding-top: 200px;
+  }
+  main #recrut-container h1 {
+    width: 100% !important;
+    font-size: 35px !important;
+    margin-bottom: 50px;
+  }
+  main #recrut-container .blackbar-2 {
+    display: none;
+  }
+  main #recrut-container .margin2-container {
+    display: none;
+  }
+  main #recrut-container .recrut-info {
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  main #recrut-container .recrut-info .firstname {
+    margin-left: 0px !important;
+    margin-bottom: 50px !important;
+  }
+  main #recrut-container .recrut-info .email {
+    margin-left: 0px !important;
+    margin-bottom: 50px !important;
+  }
+  main #recrut-container .recrut-info .object {
+    margin-left: 0px !important;
+    margin-bottom: 50px !important;
+  }
+  main #recrut-container .recrut-info .message {
+    margin-left: 0px !important;
+    margin-bottom: 50px !important;
+  }
+  main #recrut-container .recrut-info .submit {
+    margin: auto;
+  }
+  #footer-home {
+    height: 160px !important;
+    flex-direction: column;
+  }
+  #footer-home .logo-desktop {
+    display: none;
+  }
+  #footer-home .logo-mobile {
+    display: flex;
+    width: 100px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #footer-home .footer-reseaux {
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  #footer-home .footer-reseaux h1 {
+    display: none;
+  }
+  #footer-home .footer-reseaux .reseaux {
+    display: flex;
+    justify-content: space-around;
+  }
+  #footer-home .footer-reseaux .reseaux i {
+    padding-right: 0px !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -512,20 +696,28 @@ a {
   font-family: "GothamBook";
   src: url("./font/GothamBook.ttf");
 }
-nav {
+.nav-mobile {
+  display: none;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.nav-desktop {
   background-color: #fff;
   display: flex;
   align-items: center;
   position: relative;
   box-shadow: 0px 10px 50px 0px black;
 }
-nav img {
+.nav-desktop img {
   width: 120px;
 }
-nav .team-menu {
+.nav-desktop .team-menu {
   display: none;
 }
-nav .nav-container {
+.nav-desktop .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -536,7 +728,7 @@ nav .nav-container {
   color: #fff;
   background: transparent;
 }
-nav .nav-center {
+.nav-desktop .nav-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -545,7 +737,7 @@ nav .nav-center {
   width: 120px;
   position: relative;
 }
-nav .nav-center .sep1 {
+.nav-desktop .nav-center .sep1 {
   width: 100px;
   height: 152px;
   background-color: #000;
@@ -554,7 +746,7 @@ nav .nav-center .sep1 {
   position: absolute;
   right: -187px;
 }
-nav .nav-center .sep2 {
+.nav-desktop .nav-center .sep2 {
   width: 100px;
   height: 152px;
   background-color: #000;
@@ -563,7 +755,7 @@ nav .nav-center .sep2 {
   position: absolute;
   left: -187px;
 }
-nav .nav-left {
+.nav-desktop .nav-left {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -571,7 +763,7 @@ nav .nav-left {
   height: 80px;
   background: linear-gradient(270deg, rgb(233, 0, 46) 33%, rgb(0, 0, 0) 91%);
 }
-nav .nav-right {
+.nav-desktop .nav-right {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -580,10 +772,10 @@ nav .nav-right {
   background-color: blue;
   background: linear-gradient(90deg, rgb(233, 0, 46) 33%, rgb(23, 0, 5) 91%);
 }
-nav nav-link {
+.nav-desktop nav-link {
   cursor: pointer;
 }
-nav nav-link i {
+.nav-desktop nav-link i {
   padding-right: 15px;
 }
 
