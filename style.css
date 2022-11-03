@@ -18,6 +18,10 @@
     height: 380px;
   }
 }
+#footer-home-mobile {
+  display: none !important;
+}
+
 #Hteam-container {
   background-color: #fff;
   height: 91.5vh;
@@ -868,7 +872,7 @@
     right: 178px;
   }
   main #valorant-container {
-    padding-bottom: 700px;
+    padding-bottom: 600px;
   }
   main #valorant-container p {
     max-width: 100%;
@@ -876,109 +880,11 @@
   main #valorant-container .info-roster {
     width: 100%;
   }
-  main #valorant-container .r6acateam-container {
-    width: 100%;
+  main #valorant-container .upline {
     flex-direction: column;
   }
-  main #valorant-container .r6acateam-container .left-container {
-    flex-direction: column-reverse;
-    position: relative;
-    font-size: 13px;
-  }
-  main #valorant-container .r6acateam-container .left-container .player {
-    flex-direction: row;
-    justify-content: center;
-    border-bottom: 1px solid red !important;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 50px;
-  }
-  main #valorant-container .r6acateam-container .left-container .players-info {
-    margin-right: 0px;
-  }
-  main #valorant-container .r6acateam-container .left-container .players-info .upline {
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    left: 5px;
-  }
-  main #valorant-container .r6acateam-container .left-container .players-info .upline div {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  main #valorant-container .r6acateam-container .left-container .players-info .upline div i {
-    right: 28px;
-    bottom: 22px;
-  }
-  main #valorant-container .r6acateam-container .left-container .players-info .upline div:nth-child(2) {
-    position: absolute;
-    left: 60px;
-    top: 130px;
-  }
-  main #valorant-container .r6acateam-container .left-container .players-info .upline div:nth-child(2) i {
-    right: 27px;
-  }
-  main #valorant-container .r6acateam-container .left-container .players-info .upline div:nth-child(3) {
-    position: absolute;
-    left: 145px;
-    top: 280px;
-  }
-  main #valorant-container .r6acateam-container .left-container .players-info .upline img {
-    width: 90px;
-  }
-  main #valorant-container .r6acateam-container .left-container .players-info .bottomline {
-    flex-direction: column;
-    position: absolute;
-    top: 20px;
-    right: 5px;
-  }
-  main #valorant-container .r6acateam-container .left-container .players-info .bottomline div {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  main #valorant-container .r6acateam-container .left-container .players-info .bottomline div i {
-    bottom: 25px;
-    right: 28px;
-  }
-  main #valorant-container .r6acateam-container .left-container .players-info .bottomline div:nth-child(2) {
-    position: absolute;
-    right: 60px;
-    top: 130px;
-  }
-  main #valorant-container .r6acateam-container .left-container .players-info .bottomline img {
-    width: 90px;
-  }
-  main #valorant-container .r6acateam-container .left-container .player {
-    border: none;
-    padding-right: 0px;
-  }
-  main #valorant-container .r6acateam-container .right-container {
-    flex-direction: column;
-    margin-top: 100px;
-    margin-left: 0px;
-    font-size: 13px;
-  }
-  main #valorant-container .r6acateam-container .right-container .analyste {
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
-    border-bottom: 1px solid red;
-    width: 80%;
-  }
-  main #valorant-container .r6acateam-container .right-container .info-analyste {
-    margin-left: 0px;
-    align-items: center;
-    margin-top: 50px;
-  }
-  main #valorant-container .r6acateam-container .right-container .info-analyste img {
-    width: 90px;
-  }
-  main #valorant-container .r6acateam-container .right-container .info-analyste p {
-    padding-top: 20px;
-  }
-  main #valorant-container .r6acateam-container .right-container .info-analyste i {
-    top: 70px;
-    right: 178px;
+  main #valorant-container .upline i {
+    right: 177px !important;
   }
   #footer-home {
     height: 160px !important;
@@ -1007,6 +913,38 @@
   }
   #footer-home .footer-reseaux .reseaux i {
     padding-right: 0px !important;
+  }
+  #footer-home-mobile {
+    display: flex !important;
+    height: 160px !important;
+    flex-direction: column;
+  }
+  #footer-home-mobile .logo-desktop {
+    display: none;
+  }
+  #footer-home-mobile .logo-mobile {
+    display: flex;
+    width: 100px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #footer-home-mobile .footer-reseaux {
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  #footer-home-mobile .footer-reseaux h1 {
+    display: none;
+  }
+  #footer-home-mobile .footer-reseaux .reseaux {
+    display: flex;
+    justify-content: space-around;
+  }
+  #footer-home-mobile .footer-reseaux .reseaux i {
+    padding-right: 0px !important;
+  }
+  #footer-team {
+    display: none;
   }
 }
 * {
@@ -1390,12 +1328,12 @@ main #recrut-container .formulaire .recrut-info .submit:hover {
   transition: 0.3s;
 }
 
-#footer-home {
+#footer-home, #footer-home-mobile {
   background-color: #000;
   display: flex;
   height: 400px;
 }
-#footer-home .footer-logo {
+#footer-home .footer-logo, #footer-home-mobile .footer-logo {
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -1405,11 +1343,11 @@ main #recrut-container .formulaire .recrut-info .submit:hover {
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
-#footer-home .footer-logo img {
+#footer-home .footer-logo img, #footer-home-mobile .footer-logo img {
   width: 140px;
   margin-left: 200px;
 }
-#footer-home .footer-reseaux {
+#footer-home .footer-reseaux, #footer-home-mobile .footer-reseaux {
   font-family: "Valorant";
   color: #fff;
   display: flex;
@@ -1417,16 +1355,16 @@ main #recrut-container .formulaire .recrut-info .submit:hover {
   justify-content: center;
   margin-left: 100px;
 }
-#footer-home .footer-reseaux .reseaux {
+#footer-home .footer-reseaux .reseaux, #footer-home-mobile .footer-reseaux .reseaux {
   margin-top: 20px;
   font-size: 30px;
 }
-#footer-home .footer-reseaux .reseaux i {
+#footer-home .footer-reseaux .reseaux i, #footer-home-mobile .footer-reseaux .reseaux i {
   padding-right: 25px;
   cursor: pointer;
   transition: 0.3s;
 }
-#footer-home .footer-reseaux .reseaux i:hover {
+#footer-home .footer-reseaux .reseaux i:hover, #footer-home-mobile .footer-reseaux .reseaux i:hover {
   color: #E9002E;
   transform: scale(1.2);
   transition: 0.3s;
