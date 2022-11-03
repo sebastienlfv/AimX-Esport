@@ -587,6 +587,9 @@
   }
   main #tweet-container .flex-tweet {
     flex-direction: column;
+    height: 100% !important;
+    justify-content: center !important;
+    align-items: center;
   }
   main #tweet-container .flex-tweet .info-tweet h1 {
     font-size: 35px !important;
@@ -602,7 +605,7 @@
   }
   main #tweet-container .flex-tweet .tweetfeel {
     height: 400px !important;
-    width: 340px !important;
+    width: 90% !important;
   }
   main #recrut-container {
     padding-top: 200px;
