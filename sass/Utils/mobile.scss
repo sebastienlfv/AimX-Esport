@@ -205,7 +205,7 @@
     }
 
     #r6-container {
-      padding-bottom: 1500px;
+      padding-bottom: 500px;
       p {
         max-width: 100%;
       }
@@ -301,6 +301,286 @@
         .right-container {
           flex-direction: column;
           margin-top: 200px;
+          margin-left: 0px;
+          font-size: 13px;
+
+          .analyste {
+            flex-direction: row;
+            justify-content: center;
+            margin: auto;
+            border-bottom: 1px solid red;
+            width: 80%;
+          }
+
+          .info-analyste {
+            margin-left: 0px;
+            align-items: center;
+            margin-top: 50px;
+
+            img {
+              width: 90px;
+            }
+
+            p {
+              padding-top: 20px;
+            }
+
+            i {
+              top: 70px;
+              right: 178px;
+            }
+          }
+        }
+      }
+    }
+
+    #r6aca-container {
+      padding-bottom: 700px;
+      p {
+        max-width: 100%;
+      }
+
+      .info-roster {
+        width: 100%;
+      }
+
+      .r6acateam-container {
+        width: 100%;
+        flex-direction: column;
+
+        .left-container {
+          flex-direction: column-reverse;
+          position: relative;
+          font-size: 13px;
+
+          .player {
+            flex-direction: row;
+            justify-content: center;
+            border-bottom: 1px solid red !important;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 50px;
+          }
+
+          .players-info {
+            margin-right: 0px;
+
+            .upline {
+              flex-direction: column;
+              position: absolute;
+              top: 70px;
+              left: 5px;
+
+              div {
+                padding-left: 0px;
+                padding-right: 0px;
+
+                i {
+                  right: 28px;
+                  bottom: 22px;
+                }
+
+
+              }
+
+              div:nth-child(2) {
+                position: absolute;
+                left: 60px;
+                top: 130px;
+
+                i {
+                  right: 27px;
+                }
+              }
+
+              div:nth-child(3) {
+                position: absolute;
+                left: 145px;
+                top: 280px;
+              }
+
+              img {
+                width: 90px;
+              }
+            }
+
+            .bottomline {
+              flex-direction: column;
+              position: absolute;
+              top: 20px;
+              right: 5px;
+
+              div {
+                padding-left: 0px;
+                padding-right: 0px;
+
+                i {
+                  bottom: 25px;
+                  right: 28px;
+                }
+              }
+
+              div:nth-child(2) {
+                position: absolute;
+                right: 60px;
+                top: 130px;
+              }
+
+              img {
+                width: 90px;
+              }
+            }
+          }
+
+          .player {
+            border: none;
+            padding-right: 0px;
+          }
+        }
+
+        .right-container {
+          flex-direction: column;
+          margin-top: 100px;
+          margin-left: 0px;
+          font-size: 13px;
+
+          .analyste {
+            flex-direction: row;
+            justify-content: center;
+            margin: auto;
+            border-bottom: 1px solid red;
+            width: 80%;
+          }
+
+          .info-analyste {
+            margin-left: 0px;
+            align-items: center;
+            margin-top: 50px;
+
+            img {
+              width: 90px;
+            }
+
+            p {
+              padding-top: 20px;
+            }
+
+            i {
+              top: 70px;
+              right: 178px;
+            }
+          }
+        }
+      }
+    }
+
+    #valorant-container {
+      padding-bottom: 700px;
+      p {
+        max-width: 100%;
+      }
+
+      .info-roster {
+        width: 100%;
+      }
+
+      .r6acateam-container {
+        width: 100%;
+        flex-direction: column;
+
+        .left-container {
+          flex-direction: column-reverse;
+          position: relative;
+          font-size: 13px;
+
+          .player {
+            flex-direction: row;
+            justify-content: center;
+            border-bottom: 1px solid red !important;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 50px;
+          }
+
+          .players-info {
+            margin-right: 0px;
+
+            .upline {
+              flex-direction: column;
+              position: absolute;
+              top: 70px;
+              left: 5px;
+
+              div {
+                padding-left: 0px;
+                padding-right: 0px;
+
+                i {
+                  right: 28px;
+                  bottom: 22px;
+                }
+
+
+              }
+
+              div:nth-child(2) {
+                position: absolute;
+                left: 60px;
+                top: 130px;
+
+                i {
+                  right: 27px;
+                }
+              }
+
+              div:nth-child(3) {
+                position: absolute;
+                left: 145px;
+                top: 280px;
+              }
+
+              img {
+                width: 90px;
+              }
+            }
+
+            .bottomline {
+              flex-direction: column;
+              position: absolute;
+              top: 20px;
+              right: 5px;
+
+              div {
+                padding-left: 0px;
+                padding-right: 0px;
+
+                i {
+                  bottom: 25px;
+                  right: 28px;
+                }
+              }
+
+              div:nth-child(2) {
+                position: absolute;
+                right: 60px;
+                top: 130px;
+              }
+
+              img {
+                width: 90px;
+              }
+            }
+          }
+
+          .player {
+            border: none;
+            padding-right: 0px;
+          }
+        }
+
+        .right-container {
+          flex-direction: column;
+          margin-top: 100px;
           margin-left: 0px;
           font-size: 13px;
 
